@@ -1,0 +1,67 @@
+.logform{
+    height:100vh;
+    width: 100vw;
+    background-color: aqua;
+    position: relative;
+}
+.regform{
+    position: absolute;
+    box-shadow: 0 0 25px 10px black;
+    border-radius: 10px;
+    height: 95%;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: azure;
+    padding: 2%;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 100%;
+}
+#image{
+    height: fit-content;
+}
+.login{
+    padding: 20px;
+
+    box-shadow: 0 0 15px 10px #888888;
+    border-radius: 10px;}
+.rep {
+    background-color: skyblue;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px blue;
+    border-radius: 10px;
+}
+.reg{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 15px 10px #888888;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .regform {
+      
+      grid-template-columns: 100%;
+      grid-template-rows: 80% 2% 100% ;
+    }
+    
+    
+  }
+
+  .upimg{
+      
+      width: 60%;
+      height: 35%;
+      
+      margin-bottom: 10%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+
+  }

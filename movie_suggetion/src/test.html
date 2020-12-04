@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+       
+        .center{
+           
+            
+            padding: 5px;
+            height: 20px;
+            width: 50px;
+            text-align: center;
+            background-color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0 0 10px black;
+            
+        }
+        .center:hover{
+            cursor:grab;
+            transform: scale(1.5);
+        }
+    </style>
+    <script>
+        function clickfun(e){
+            console.log(e);
+        }
+        function move(e)
+        {
+            var ele=document.getElementById("center")
+            console.log(ele.style)
+            ele.style.marginLeft=e.pageX+"px";
+            ele.style.marginTop=e.pageY+"px";
+        }
+        document.addEventListener("click",move);
+        
+    </script>
+    
+</head>
+<body id="body">
+    <div class="center" id="center" onclick="clickfun(this)">CLick</div>
+    
+    
+</body>
+
+</html>
